@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2DO-List</title>
+    <link rel="stylesheet" href="todo.css" />
+    <link rel="stylesheet" href="todoqueries.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="logo/logo.jpg" alt="My Logo" class="logo" />
+    </header>
+
+    <div class="container">
+      <div class="titleContainer">
+        <p class="titleDesign">
+          2DO-Lists: Help you to build your productive day!
+        </p>
+      </div>
+      <div class="todoContainer">
+        <div class="container1">
+          <div class="inputDesign">
+            <input
+              maxlength="25"
+              type="text"
+              class="js-inputName nameDesign"
+              placeholder=".Enter your task"
+              onkeydown="enterKey(event)"
+            />
+            <input
+              type="date"
+              class="js-inputDate dateDesign"
+              onkeydown="enterKey(event)"
+            />
+            <input
+              type="time"
+              class="js-inputTime timeDesign"
+              onkeydown="enterKey(event)"
+            />
+            <button class="addDesign" onclick="addTodo()">Add</button>
+          </div>
+          <div class="js-todoList"></div>
+        </div>
+      </div>
+    </div>
+    <script src="todo.js"></script>
+  </body>
+</html>

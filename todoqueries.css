@@ -1,0 +1,50 @@
+@media only screen and (max-width: 767px) {
+  .inputDesign {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+  .js-todo-layout {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+  .buttonContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .addDesign {
+    padding: 10px 0px;
+  }
+  .buttonContainer {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .deleteDesign,
+  .priorityDesign {
+    border-radius: 0;
+  }
+
+  .header{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .titleDesign{
+    font-size: 10px;
+  }
+
+  .logo {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .js-todo-layout {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .dateDesign,
+  .timeDesign {
+    width: auto;  
+}
+}
